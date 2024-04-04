@@ -21,12 +21,25 @@ https://github.com/KLab/PlaygroundOSS/tree/master/Tools/Toboggan
 - Tasks
 - Engine
 
+## api
+
+Doc/SysCommandList.xls
+
 ## 2024-04-04 13:38:11
 
 - @ques 如何运行项目 ？
 
-  - 能不能在 linux 下运行（是不是必须到 windows 上才能运行）
+  - 能不能在 linux 下运行 -> 好像只能 在 windows 上运行
+  - Republish
   - demo 项目如何运行
+    - 难道好要安装 Visual Studio solution | Visual 2010 Express 又是什么？
+    - How to start a LUA Game
+
+- @ques Microsoft Visual Studio solution 是不是就是 Microsoft Visual Studio
+
+  - Visual 2010 Express
+  - GameLibraryWin32.sln
+  - 。。。
 
 - @ques 用什么语言编写
 
