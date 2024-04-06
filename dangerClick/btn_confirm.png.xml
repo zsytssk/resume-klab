@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KLBImageEditor_Plugin id="e2c15d53-da5c-47fc-8778-2bde926ac4ad">
+  <ProjectPropertyModel>
+    <Version>0.2.0</Version>
+    <ProjectFile>btn_confirm.png.xml</ProjectFile>
+    <ProjectFileRelativeDir />
+    <SaveDate>2024-04-06T14:12:29</SaveDate>
+    <EditState>false</EditState>
+    <VisibleImage>false</VisibleImage>
+    <VisiblePolygon>false</VisiblePolygon>
+    <VisibleMask>false</VisibleMask>
+    <VisibleBoundBox>false</VisibleBoundBox>
+    <VisibleGrid>false</VisibleGrid>
+    <VisibleProperty>false</VisibleProperty>
+  </ProjectPropertyModel>
+  <ContainerPropertyModel />
+  <ImageModel>
+    <isAdditive>false</isAdditive>
+    <ImgFileSize>7612</ImgFileSize>
+    <ImgFileDate>2024/4/6 14:09:49</ImgFileDate>
+    <ImgPathName>btn_confirm.png</ImgPathName>
+    <PriorityOffset>0</PriorityOffset>
+    <ImageType>Default</ImageType>
+    <ImageTypeParams />
+    <VerticesClockwise>true</VerticesClockwise>
+    <Center>
+      <X>0</X>
+      <Y>0</Y>
+    </Center>
+    <Width>166</Width>
+    <Height>69</Height>
+    <VertexPostProcessMode>0</VertexPostProcessMode>
+    <BoundingBox>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <Size>
+        <Width>166</Width>
+        <Height>69</Height>
+      </Size>
+      <X>0</X>
+      <Y>0</Y>
+      <Width>166</Width>
+      <Height>69</Height>
+    </BoundingBox>
+    <Vertices>
+      <PointF>
+        <X>0</X>
+        <Y>0</Y>
+      </PointF>
+      <PointF>
+        <X>166</X>
+        <Y>0</Y>
+      </PointF>
+      <PointF>
+        <X>166</X>
+        <Y>69</Y>
+      </PointF>
+      <PointF>
+        <X>0</X>
+        <Y>69</Y>
+      </PointF>
+    </Vertices>
+    <Indices>AAECAw==</Indices>
+    <ImgAlphaType>TYPE_ALPHA_8BIT</ImgAlphaType>
+    <MaskCompress>true</MaskCompress>
+    <MaskX>0</MaskX>
+    <MaskY>0</MaskY>
+    <MaskWidth>166</MaskWidth>
+    <MaskHeight>69</MaskHeight>
+    <Mask>LL4B</Mask>
+  </ImageModel>
+</KLBImageEditor_Plugin>
