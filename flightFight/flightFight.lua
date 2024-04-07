@@ -9,10 +9,6 @@ function setup()
         "onDrag"
     )
     StartTip()
-
-    -- SetInterval(function()
-
-    -- end, 1000)
 end
 
 function StartTip()
@@ -42,8 +38,11 @@ function leave()
 end
 
 function onClick(x, y)
-    syslog(string.format("Click (%i,%i)", x, y))
+    syslog(string.format("step_fns len = %i", #step_fns))
     game.updateFlightPos(x)
+    SetInterval(function()
+        syslog(string.format("SetInterval len = %i", #step_fns))
+    end, 1000)
 end
 
 function onDrag(x, y)
@@ -129,6 +128,7 @@ function Game()
             monster_list[i].destroy()
         end
 
+        monster_list = {}
         flight = nil
         pause = false
         StartTip()
@@ -177,6 +177,7 @@ function Game()
         for i = #monster_list, 1, -1 do
             if monster == monster_list[i] then
                 table.remove(step_fns, i)
+                return
             end
         end
     end
@@ -291,6 +292,7 @@ function Monster(game)
         local new_y = self.y + step_y * step_num
         -- syslog(string.format("Monster new_y = %i", new_y))
         if self.y > stage_height + 20 then
+            self.destroy()
             return
         end
         local props = TASK_getProperty(node)
@@ -300,7 +302,12 @@ function Monster(game)
         TASK_setProperty(node, props)
     end
 
+    local destroy = false;
     self.destroy = function()
+        if destroy then
+            return
+        end
+        destroy = true
         game.removeMonster(self)
         TASK_kill(node)
         syslog("monster destroy")

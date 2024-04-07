@@ -9,7 +9,6 @@
 
 ## 2024-04-07 15:57:19
 
-- @ques tip = "用鼠标点击屏幕移动飞机躲避怪物"
 - @ques gameObj start end(fail|success) update pause | monsters + flight
 - @ques 飞机失败动画 改变 color 闪
 
@@ -33,10 +32,11 @@
 
 ### bug
 
-- 位置更新有些问题
+- SetInterval 被意外清理了
 
 ### end
 
+- @ques tip = "用鼠标点击屏幕移动飞机躲避怪物"
 - @ques 如何刷怪 | 移动
 - @ques 如何加音乐
 - @ques 如何渲染飞机
