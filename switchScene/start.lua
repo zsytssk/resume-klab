@@ -3,7 +3,7 @@ function setup()
 end
 
 function execute(deltaT)
-    sysLoad("asset://flightFight.lua")
+    sysLoad("asset://loading.lua")
 end
 
 function leave()

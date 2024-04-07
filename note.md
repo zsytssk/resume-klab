@@ -1,6 +1,37 @@
 ```
--e "C:\Users\zsy\Desktop\Project\demo\flightFight\.publish\iphone" -i "C:\Users\zsy\Desktop\Project\demo\flightFight\.publish\iphone"
+-e "D:\github\resume-klab\flightFight\.publish\iphone" -i "D:\github\resume-klab\flightFight\.publish\iphone"
 ```
+
+## 2024-04-07 15:57:19
+
+- @ques 计算碰撞 -> 矩形碰撞
+
+- @ques 如何加当前时间
+
+- @ques 如何销毁对象
+
+- @ques 如何销毁其他创建的 monster
+
+- @ques 如何重新开始游戏
+
+  - 重新开始 + 开始游戏
+  - 提示失败
+
+- @ques game_over + game_success 动画
+
+### bug
+
+- 位置更新有些问题
+
+### end
+
+- @ques 如何刷怪 | 移动
+- @ques 如何加音乐
+- @ques 如何渲染飞机
+- @ques 如何切换飞机皮肤
+- @ques 子弹如何创建 | 如何判断 子弹击中（难）
+
+- @ques 不用分数，直接计算时间吧
 
 ## 2024-04-06 14:03:41
 
