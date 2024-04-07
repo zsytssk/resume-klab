@@ -2,13 +2,23 @@
 -e "D:\github\resume-klab\flightFight\.publish\iphone" -i "D:\github\resume-klab\flightFight\.publish\iphone"
 ```
 
+```
+242x132
+282x153
+```
+
 ## 2024-04-07 15:57:19
+
+- @ques tip = "用鼠标点击屏幕移动飞机躲避怪物"
+- @ques gameObj start end(fail|success) update pause | monsters + flight
+- @ques 飞机失败动画 改变 color 闪
 
 - @ques 计算碰撞 -> 矩形碰撞
 
 - @ques 如何加当前时间
 
 - @ques 如何销毁对象
+- @ques 如何 pause game
 
 - @ques 如何销毁其他创建的 monster
 
@@ -18,6 +28,8 @@
   - 提示失败
 
 - @ques game_over + game_success 动画
+
+- @ques 放一个视频在文件中
 
 ### bug
 

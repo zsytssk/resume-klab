@@ -4,7 +4,7 @@
     <Version>0.1.0</Version>
     <ProjectFile>assets.xml</ProjectFile>
     <ProjectFileRelativeDir>assets/</ProjectFileRelativeDir>
-    <SaveDate>2024-04-07T15:54:22</SaveDate>
+    <SaveDate>2024-04-07T20:42:00</SaveDate>
     <EditState>true</EditState>
     <ContainerScale>1</ContainerScale>
     <ContainerSnap>8</ContainerSnap>
@@ -88,6 +88,32 @@
       <IsFlipY>false</IsFlipY>
       <IsSwitchXY>false</IsSwitchXY>
       <ImgPathName>assets/monster.png</ImgPathName>
+      <ZOrder>0</ZOrder>
+    </TextureModel>
+    <TextureModel>
+      <Pos>
+        <X>8</X>
+        <Y>200</Y>
+      </Pos>
+      <Id>0</Id>
+      <Name>status_succ.png</Name>
+      <IsFlipX>false</IsFlipX>
+      <IsFlipY>false</IsFlipY>
+      <IsSwitchXY>false</IsSwitchXY>
+      <ImgPathName>assets/status_succ.png</ImgPathName>
+      <ZOrder>0</ZOrder>
+    </TextureModel>
+    <TextureModel>
+      <Pos>
+        <X>328</X>
+        <Y>200</Y>
+      </Pos>
+      <Id>0</Id>
+      <Name>status_fail.png</Name>
+      <IsFlipX>false</IsFlipX>
+      <IsFlipY>false</IsFlipY>
+      <IsSwitchXY>false</IsSwitchXY>
+      <ImgPathName>assets/status_fail.png</ImgPathName>
       <ZOrder>0</ZOrder>
     </TextureModel>
   </ArrayOfTextureModel>
