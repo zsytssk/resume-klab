@@ -4,7 +4,7 @@
     <Version>0.1.0</Version>
     <ProjectFile>assets.xml</ProjectFile>
     <ProjectFileRelativeDir>assets/</ProjectFileRelativeDir>
-    <SaveDate>2024-04-07T20:42:00</SaveDate>
+    <SaveDate>2024-04-07T21:04:09</SaveDate>
     <EditState>true</EditState>
     <ContainerScale>1</ContainerScale>
     <ContainerSnap>8</ContainerSnap>
@@ -114,6 +114,19 @@
       <IsFlipY>false</IsFlipY>
       <IsSwitchXY>false</IsSwitchXY>
       <ImgPathName>assets/status_fail.png</ImgPathName>
+      <ZOrder>0</ZOrder>
+    </TextureModel>
+    <TextureModel>
+      <Pos>
+        <X>48</X>
+        <Y>376</Y>
+      </Pos>
+      <Id>0</Id>
+      <Name>btn_start.png</Name>
+      <IsFlipX>false</IsFlipX>
+      <IsFlipY>false</IsFlipY>
+      <IsSwitchXY>false</IsSwitchXY>
+      <ImgPathName>assets/btn_start.png</ImgPathName>
       <ZOrder>0</ZOrder>
     </TextureModel>
   </ArrayOfTextureModel>

@@ -1,5 +1,5 @@
 function setup()
-    FONT_load("JetBrainsMono", "asset://JetBrainsMono-Medium.ttf")
+    FONT_load("AlexBrush", "asset://JetBrainsMono-Medium.ttf")
 end
 
 function execute(deltaT)

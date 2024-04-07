@@ -1,5 +1,6 @@
 local step_fns = {}
 local game
+local pTip
 
 function setup()
     game = Game()
@@ -7,12 +8,25 @@ function setup()
         "onClick",
         "onDrag"
     )
-
-    game.startGame()
+    StartTip()
 
     -- SetInterval(function()
 
     -- end, 1000)
+end
+
+function StartTip()
+    pTip = UI_Form(nil,           -- arg[1]:	親となるUIタスクのポインタ
+        7000,                     -- arg[2]:	基準表示プライオリティ
+        0, 0,                     -- arg[3,4]:	表示位置
+        "asset://StartGame.json", -- arg[5]:	composit jsonのパス
+        false                     -- arg[6]:	排他フラグ
+    )
+end
+
+function StartGame()
+    TASK_kill(pTip)
+    game.startGame()
 end
 
 function execute(deltaT)
@@ -102,7 +116,7 @@ function Game()
 
         timeout = SetTimeout(function()
             self.endGame()
-        end, 2000)
+        end, 4000)
     end
 
     self.endGame = function()
@@ -117,6 +131,7 @@ function Game()
 
         flight = nil
         pause = false
+        StartTip()
     end
 
     self.updateFlightPos = function(x)
@@ -301,10 +316,10 @@ function StatusAni(status)
     local pos
     if status == 'fail' then
         img = "asset://assets/status_fail.png.imag"
-        pos = { x = (stage_with - fail_size.width) / 2, y = (stage_with - fail_size.height) }
+        pos = { x = (stage_with - fail_size.width) / 2, y = (stage_height - fail_size.height) / 2 }
     else
         img = "asset://assets/status_succ.png.imag"
-        pos = { x = (stage_with - suc_size.width) / 2, y = (stage_with - suc_size.height) }
+        pos = { x = (stage_with - suc_size.width) / 2, y = (stage_height - suc_size.height) / 2 }
     end
 
     local node = UI_SimpleItem(nil, -- arg[1]:		親となるUIタスクポインタ
@@ -313,6 +328,8 @@ function StatusAni(status)
         img                         -- arg[5]:		表示assetのパス
     )
 
+
+    syslog(string.format("StatusAni (%i,%i)", pos.x, pos.y))
     SetTimeout(function()
         TASK_kill(node)
     end, 2000)

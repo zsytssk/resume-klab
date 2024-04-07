@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KLBUIEditor_Plugin id="f3e7051a-66dc-4ba8-9f0a-a014098bf298" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <DrawingAllNodesClickableRegion>true</DrawingAllNodesClickableRegion>
+  <DrawingFingerNode>false</DrawingFingerNode>
+  <DrawingGrid>true</DrawingGrid>
+  <DrawingNodeClipRegion>true</DrawingNodeClipRegion>
+  <DrawingNodeName>true</DrawingNodeName>
+  <FormBounds xmlns:d1p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+    <d1p1:height>737</d1p1:height>
+    <d1p1:width>1495</d1p1:width>
+    <d1p1:x>199</d1p1:x>
+    <d1p1:y>-9</d1p1:y>
+  </FormBounds>
+  <GridSize>10</GridSize>
+  <GuideForFourSplit>false</GuideForFourSplit>
+  <GuideForMargin>false</GuideForMargin>
+  <GuideForThreeSplit>false</GuideForThreeSplit>
+  <LayoutPpi>326</LayoutPpi>
+  <LayoutScale>0.5</LayoutScale>
+  <LayoutSize xmlns:d1p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+    <d1p1:height>640</d1p1:height>
+    <d1p1:width>960</d1p1:width>
+  </LayoutSize>
+  <RootNode>
+    <name>root</name>
+    <x>0</x>
+    <y>0</y>
+    <priority>0</priority>
+    <sub>
+      <UINode>
+        <name>label</name>
+        <x>500</x>
+        <y>210</y>
+        <priority>0</priority>
+        <class>label</class>
+        <text>use mouse click change flight position to avoid enermy</text>
+        <fontname>AlexBrush</fontname>
+        <fontsize>20</fontsize>
+        <_x0023_color xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">-13421773</_x0023_color>
+        <width>669</width>
+        <height>62</height>
+        <_x0040_Publishable>true</_x0040_Publishable>
+        <xscale>1</xscale>
+        <yscale>1</yscale>
+        <rotation>0</rotation>
+        <_x0023_align>5</_x0023_align>
+      </UINode>
+      <UINode>
+        <name>button</name>
+        <x>400</x>
+        <y>270</y>
+        <priority>1</priority>
+        <sx>0</sx>
+        <sy>0</sy>
+        <sw>163</sw>
+        <sh>61</sh>
+        <class>button</class>
+        <onclick>StartGame</onclick>
+        <default>assets/btn_start.png.imag</default>
+        <select>assets/btn_start.png.imag</select>
+        <disable>assets/btn_start.png.imag</disable>
+        <sub>
+          <UINode>
+            <name>label</name>
+            <x>80</x>
+            <y>30</y>
+            <priority>2</priority>
+            <class>label</class>
+            <text>Start Game</text>
+            <fontname>AlexBrush</fontname>
+            <fontsize>30</fontsize>
+            <_x0023_color xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:int">-13421773</_x0023_color>
+            <width>163</width>
+            <height>60</height>
+            <_x0040_Publishable>true</_x0040_Publishable>
+            <xscale>1</xscale>
+            <yscale>1</yscale>
+            <rotation>0</rotation>
+            <_x0023_align>5</_x0023_align>
+          </UINode>
+        </sub>
+        <_x0040_Publishable>true</_x0040_Publishable>
+        <xscale>1</xscale>
+        <yscale>1</yscale>
+        <_x0040_CommonAssets xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d4p1:string>assets/btn_start.png</d4p1:string>
+          <d4p1:string>assets/btn_start.png</d4p1:string>
+          <d4p1:string>assets/btn_start.png</d4p1:string>
+          <d4p1:string i:nil="true" />
+          <d4p1:string i:nil="true" />
+          <d4p1:string i:nil="true" />
+        </_x0040_CommonAssets>
+        <rotation>0</rotation>
+      </UINode>
+    </sub>
+    <width>960</width>
+    <height>640</height>
+    <_x0040_Publishable>true</_x0040_Publishable>
+    <_x0040_CommonAssets xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d2p1:string i:nil="true" />
+    </_x0040_CommonAssets>
+  </RootNode>
+  <ServerApiGroup>[ServerAPI]</ServerApiGroup>
+  <WindowState>Normal</WindowState>
+</KLBUIEditor_Plugin>
