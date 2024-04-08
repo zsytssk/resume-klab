@@ -1,4 +1,6 @@
 ```
+-e "D:\github\resume-klab\dangerClick\.publish\iphone" -i "D:\github\resume-klab\dangerClick\.publish\iphone"
+-e "D:\github\resume-klab\switchScene\.publish\iphone" -i "D:\github\resume-klab\switchScene\.publish\iphone"
 -e "D:\github\resume-klab\flightFight\.publish\iphone" -i "D:\github\resume-klab\flightFight\.publish\iphone"
 ```
 
