@@ -38,11 +38,8 @@ function leave()
 end
 
 function onClick(x, y)
-    syslog(string.format("step_fns len = %i", #step_fns))
     game.updateFlightPos(x)
-    SetInterval(function()
-        syslog(string.format("SetInterval len = %i", #step_fns))
-    end, 1000)
+    syslog(string.format("step_fns len = %i", #step_fns))
 end
 
 function onDrag(x, y)
@@ -68,12 +65,13 @@ function Game()
         flight = Flight(self)
         local createMonster = function()
             syslog("createMonster")
+            syslog(string.format("createMonster step_fns len = %i", #step_fns))
             local m = Monster(self)
             table.insert(monster_list, m)
         end
 
         createMonster();
-        createMonInterval = SetInterval(createMonster, 5000)
+        createMonInterval = SetInterval(createMonster, 3000)
 
         step_fn.add(self.update)
     end
@@ -99,6 +97,7 @@ function Game()
     self.finishGame = function(status)
         self.pauseGame()
         if createMonInterval ~= nil then
+            syslog(string.format("finishGame"))
             createMonInterval()
             createMonInterval = nil
         end
@@ -168,6 +167,7 @@ function Game()
             timeout = nil
         end
         if createMonInterval ~= nil then
+            syslog(string.format("destroy"))
             createMonInterval()
             createMonInterval = nil
         end
@@ -176,7 +176,7 @@ function Game()
     self.removeMonster = function(monster)
         for i = #monster_list, 1, -1 do
             if monster == monster_list[i] then
-                table.remove(step_fns, i)
+                table.remove(monster_list, i)
                 return
             end
         end
